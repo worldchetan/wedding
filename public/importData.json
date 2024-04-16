@@ -1,0 +1,46 @@
+{
+  "testimonials": {
+    "heading": "Testimonials",
+    "info": [
+      {
+        "id": "",
+        "client_name": "chetan jadhav",
+        "client_review": "good job",
+        "imgName": ""
+      }
+    ]
+  },
+  "intsa_details": {
+    "heading": "Wedding Photography",
+    "insta_imges": [
+      {
+        "img_name": "one",
+        "img_insta_url": "./../src/Assets/one.jpg"
+      },
+      {
+        "img_name": "one",
+        "img_insta_url": "./../src/Assets/two.jpg"
+      },
+      {
+        "img_name": "one",
+        "img_insta_url": "./../src/Assets/three.jpg"
+      },
+      {
+        "img_name": "one",
+        "img_insta_url": "./../src/Assets/four.jpg"
+      },
+      {
+        "img_name": "one",
+        "img_insta_url": "./../src/Assets/five.webp"
+      },
+      {
+        "img_name": "one",
+        "img_insta_url": "./../src/Assets/six.webp"
+      },
+      {
+        "img_name": "one",
+        "img_insta_url": "./../src/Assets/seven.jpg"
+      }
+    ]
+  }
+}
