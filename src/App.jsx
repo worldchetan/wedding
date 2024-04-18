@@ -10,13 +10,14 @@ import { Foll } from "./Component/Foll";
 import { Faq } from "./Component/Faq";
 import { Contact } from "./Component/Contact";
 import { Wedding } from "./Component/Wedding";
-import {Engagement} from "./Component/Engagement"
+import { Engagement } from "./Component/Engagement";
 import { Matenity } from "./Component/Matenity";
-// import LocomotiveScroll from "locomotive-scroll";
+import LocomotiveScroll from "locomotive-scroll";
 
 function App() {
   // eslint-disable-next-line no-use-before-define
-  // const locomotiveScroll = new LocomotiveScroll();
+  const locomotiveScroll = new LocomotiveScroll();
+  // document.addEventListener('contextmenu', event => event.preventDefault());
 
   return (
     <>
@@ -27,10 +28,9 @@ function App() {
         <Route path="/client" element={<Client />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/faq" element={<Faq />} />
-        <Route path="/wedding" element={<Wedding/>} />
-        <Route path="/engagement" element={<Engagement/>} />
-        <Route path="/matenity" element={<Matenity/>}/>
-   
+        <Route path="/wedding" element={<Wedding />} />
+        <Route path="/engagement" element={<Engagement />} />
+        <Route path="/matenity" element={<Matenity />} />
       </Routes>
       <Foll />
     </>

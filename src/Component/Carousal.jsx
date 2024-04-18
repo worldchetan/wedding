@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom";
 import sli4 from "../Assets/sli4.webp";
 import sli5 from "../Assets/sli5.webp";
 import sli6 from "../Assets/sli6.webp";
-import img2 from "../Assets/img2.jpg";
-import img3 from "../Assets/img3.jpg"
+// import img2 from "../Assets/img2.jpg";
+// import img3 from "../Assets/img3.jpg"
 
 export const Carousal = () => {
   return (
@@ -14,7 +15,7 @@ export const Carousal = () => {
           data-bs-ride="carousel"
         >
           <div className="carousel-inner">
-            {/* <div className="carousel-item active">
+            <div className="carousel-item active">
               <img src={sli4} alt="Slide 1" className="d-block w-100" />
             </div>
             <div className="carousel-item">
@@ -22,14 +23,13 @@ export const Carousal = () => {
             </div>
             <div className="carousel-item">
               <img src={sli6} alt="Slide 3" className="d-block w-100" />
-            </div> */}
-            <div className="carousel-item active" >
+            </div>
+            {/* <div className="carousel-item active" >
               <img src={img2} alt="Slide 3" className="d-block w-100" />
             </div>
             <div className="carousel-item " >
               <img src={img3} alt="Slide 3" className="d-block w-100" />
-            </div>
-            
+            </div> */}
           </div>
           <button
             className="carousel-control-prev"
@@ -57,9 +57,9 @@ export const Carousal = () => {
           </button>
         </div>
       </div>
-      <a className="btn" href="">
+      <Link className="btn getBtn" to="./contact">
         Get in Touch
-      </a>
+      </Link>
     </div>
   );
 };

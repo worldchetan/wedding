@@ -50,10 +50,7 @@ export const Enquiry = () => {
                 <Field type="text" className="form-control" name="event" />
               </div>
 
-              <button
-                type="submit"
-                className="btn btn-primary justify-content-center align-items-center"
-              >
+              <button type="submit" className="btn  btn-primary getCont">
                 send
               </button>
             </Form>

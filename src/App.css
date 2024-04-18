@@ -1,16 +1,69 @@
-.btn {
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+.getBtn {
   margin: 24px 120px;
   border: 1px solid gray;
   border-radius: 0%;
   text-transform: uppercase;
   cursor: pointer;
 }
+.cont {
+  margin: 23px 130px;
+  border: 1px solid gray;
+  border-radius: 0%;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.getCont {
+  padding: 10px 36px;
+  margin: 20px 115px;
+  /* border: 1px solid gray; */
+  border-radius: 10%;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.nav-link.active {
+  color: black !important;
+  font-family: "Oswald";
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.nav-link {
+  color: black !important;
+  font-family: "Oswald";
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.active {
+  color: black !important;
+  font-family: "Oswald";
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.wraper {
+  margin: 20px;
+}
+.navbar-toggler {
+  background-color: black;
+}
+.wrp {
+  font-family: "Oswald";
+  font-weight: 200;
+  font-size: 33px;
+}
+
 .ins {
   display: flex;
   margin-top: 50px;
   margin: 12px;
   align-items: center;
   justify-content: center;
+}
+.insa {
+  margin: 20px;
 }
 .insta {
   margin-top: 27px;
@@ -22,6 +75,7 @@
   background-color: #3578e5;
   color: white;
   border-radius: 10px;
+  text-decoration: none;
 }
 .io {
   padding: 8px 6px;
@@ -31,37 +85,62 @@
   margin-left: 80px;
   margin-top: 10px;
   border-radius: 10px;
+  text-decoration: none;
 }
 .abo {
   margin: 5px;
+  text-decoration: none;
+}
+.about {
+  text-align: center;
 }
 
 .textfive {
   font-size: 23px;
   margin-top: 59px;
+  font-family: "Oswald";
+  font-weight: 300;
+  font-size: 35px;
 }
 .textone {
   margin: 12px;
   line-height: 10px;
 }
+.test {
+  font-family: "Oswald";
+  font-weight: 200;
+  font-size: 33px;
+}
+
 .text {
   margin: 12px;
   line-height: 10px;
+  font-family: "Oswald";
+  font-weight: 200;
+  font-size: 30px;
 }
 p {
   margin-top: 19px;
   padding: 16px;
 }
 .card {
-  width: 95%;
+  /* width: 95%; */
   height: auto;
   overflow: hidden;
   object-fit: cover;
   margin: 10px;
+  margin-top: 26px;
   border-radius: 5px;
 }
 .check {
   margin-left: 177px;
+  text-decoration: none;
+  color: black;
+}
+.checkk {
+  /* margin-left: 177px; */
+  text-decoration: none;
+  color: black;
 }
 .logo {
   height: 68px;

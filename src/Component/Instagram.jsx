@@ -1,5 +1,5 @@
-import insta from "../Assets/insta.png";
-// import two from "../Assets/two.jpg";
+import instaa from "../Assets/insta.png";
+import two from "../Assets/two.jpg";
 // import three from "../Assets/three.jpg";
 // import one from "../Assets/one.jpg";
 // import four from "../Assets/four.jpg";
@@ -17,8 +17,8 @@ export const Instagram = () => {
   const getInstaa = async () => {
     try {
       const result = await getInsta();
-      console.log("getInsta", result);
-      console.log(result?.data?.intsa_details?.insta_imges);
+      // console.log("getInsta", result);
+      // console.log(result?.data?.intsa_details?.insta_imges);
       setInsta(result?.data?.intsa_details);
       setData(result?.data?.intsa_details?.insta_imges);
     } catch (error) {
@@ -30,59 +30,67 @@ export const Instagram = () => {
   }, []);
   return (
     <div>
-      <h1 className="text-center textfive">{insta.heading}</h1>
-      <h2 className="text-center">See us on Instagram</h2>
-      <div className="ins">
-        <img src={insta} alt="" className="text-center" />
-        <h5 className="text-center abo">Wedding Photography </h5>
-      </div>
-
-      <div>
-        {data.map((detl, index) => {
-          return (
-            <div className="card" key={index}>
-              <img src={detl.img_insta_url} alt="insta images" />
-            </div>
-          );
-        })}
-
-        {/* <div className="card">
-          <img src={two} alt="" />
+      <div className="insa">
+        {/* <h1 className="text-center textfive">{insta.heading}</h1> */}
+        <h2 className="text-center test">See us on Instagram</h2>
+        <div className="ins">
+          <img src={insta} alt="" className="text-center" />
+          <h5 className="text-center abo">
+            <a
+              className="checkk"
+              href="https://www.instagram.com/nilesh_cinematographer_jalgaon?igsh=MTJxeGhvMzBzN2tmbg=="
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={instaa} alt="" />
+              {""} nilesh_cinematographer_jalgaon{" "}
+            </a>
+          </h5>
         </div>
-        <div className="card">
-          <img src={three} alt="" />
+        <div>
+          {data.map((detl, index) => {
+            return (
+              <div className="card" key={index}>
+                <img
+                  src={require(`./..//src/Assets/${detl.img_insta_url}`)}
+                  alt="insta images"
+                />
+              </div>
+            );
+          })}
         </div>
-        <div className="card">
-          <img src={four} alt="" />
-        </div>
-        <div className="card">
-          <img src={five} alt="" />
-        </div>
-        <div className="card">
-          <img src={six} alt="" />
-        </div>
-        <div className="card">
-          <img src={seven} alt="" />
-        </div> */}
       </div>
       <div className="insta">
-        <span className="fb">
+        <a
+          className="fb"
+          href="https://www.facebook.com/profile.php?id=100009447008329&mibextid=ZbWKwL"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src={fb} alt="" />
           Facebook
-        </span>
-        <span className="io">
-          <img src={insta} alt="" />
+        </a>
+        <a
+          className="io"
+          href="https://www.instagram.com/nilesh_cinematographer_jalgaon?igsh=MTJxeGhvMzBzN2tmbg=="
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={instaa} alt="" />
           Instagram
-        </span>
+        </a>
       </div>
 
       <br />
       <div className="ins">
-        <img src={insta} alt="" className="text-center" />
-        <h5 className="text-center abo">Wedding Photography </h5>
+        {/* <img src={insta} alt="" className="text-center"  /> */}
+        <h5 className="text-center abo ">
+          We’re excited to hear from you and start the journey of becoming your
+          wedding photographers!{" "}
+        </h5>
       </div>
 
-      <Link className="btn" to="/contact">
+      <Link className="btn cont" to="/contact">
         lets book
       </Link>
       <hr />

@@ -4,13 +4,12 @@ import getLevelTwo from "./../service/getTesto";
 export const Testo = () => {
   const [test, setData] = useState({});
   const [info, setInfo] = useState([]);
-  
-  
+
   const getLevel2 = async () => {
     try {
       const result = await getLevelTwo();
-      console.log("getLevelTwo", result);
-      console.log(result.data?.testimonials);
+      // console.log("getLevelTwo", result);
+      // console.log(result.data?.testimonials);
       setData(result.data?.testimonials);
       setInfo(result?.data?.testimonials?.info);
     } catch (error) {
@@ -22,7 +21,7 @@ export const Testo = () => {
   }, []);
   return (
     <div>
-      <h2 className="text-center">{test.heading}</h2>
+      <h2 className="text-center test">{test.heading}</h2>
       <div className="Carousel4e">
         <div
           id="carouselExampleControls"
@@ -36,8 +35,8 @@ export const Testo = () => {
                   <div className="carousel-item active" key={index}>
                     <div className="carousel-caption">
                       <p>{detl.client_review}</p>
-                      {/* <img src="https://i.imgur.com/lE89Aey.jpg" /> */}
-                      <img src="../Assets/logo.png" />
+                      <img className="img-fluid" src={detl.imgName} />
+                      {/* <img src="../Assets/logo.png" /> */}
                       <div id="image-caption">{detl.client_name}</div>
                     </div>
                   </div>

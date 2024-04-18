@@ -1,14 +1,11 @@
 import { Link } from "react-router-dom";
 // import logo from "../Assets/logo.png";
 import nil from "../Assets/nil.png";
-import Logoo from "../Assets/Logoo.webp";
+// import Logoo from "../Assets/Logoo.webp";
 export const Navbar = () => {
   return (
     <div>
-      <nav
-        className="navbar navbar-expand-lg navbar-dark p-3 bg-danger"
-        id="headerNav"
-      >
+      <nav className="navbar navbar-expand-lg navbar-dark  " id="headerNav">
         <div className="container-fluid">
           <Link className="navbar-brand d-block d-lg-none " to="/">
             <img src={nil} style={{ height: "68px" }} alt="camera" />
