@@ -1,5 +1,5 @@
 import instaa from "../Assets/insta.png";
-import two from "../Assets/two.jpg";
+// import two from "../Assets/two.jpg";
 // import three from "../Assets/three.jpg";
 // import one from "../Assets/one.jpg";
 // import four from "../Assets/four.jpg";
@@ -8,7 +8,7 @@ import two from "../Assets/two.jpg";
 // import seven from "../Assets/seven.jpg";
 import fb from "../Assets/fb.png";
 import { Link } from "react-router-dom";
-import getInsta from "../service/getInsta";
+// import getInsta from "../service/getInsta";
 import { useEffect, useState } from "react";
 export const Instagram = () => {
   const [insta, setInsta] = useState({});
@@ -16,11 +16,44 @@ export const Instagram = () => {
 
   const getInstaa = async () => {
     try {
-      const result = await getInsta();
+      // const result = await getInsta();
+      const result = {
+        heading: "Wedding Photography",
+        insta_imges: [
+          {
+            img_name: "one",
+            img_insta_url: "one.jpg",
+          },
+          {
+            img_name: "one",
+            img_insta_url: "two.jpg",
+          },
+          {
+            img_name: "one",
+            img_insta_url: "three.jpg",
+          },
+          {
+            img_name: "one",
+            img_insta_url: "four.jpg",
+          },
+          {
+            img_name: "one",
+            img_insta_url: "five.webp",
+          },
+          {
+            img_name: "one",
+            img_insta_url: "six.webp",
+          },
+          {
+            img_name: "one",
+            img_insta_url: "seven.jpg",
+          },
+        ],
+      };
       // console.log("getInsta", result);
       // console.log(result?.data?.intsa_details?.insta_imges);
-      setInsta(result?.data?.intsa_details);
-      setData(result?.data?.intsa_details?.insta_imges);
+      setInsta(result);
+      setData(result?.insta_imges);
     } catch (error) {
       console.log("getInsta error ", error);
     }
@@ -52,7 +85,7 @@ export const Instagram = () => {
             return (
               <div className="card" key={index}>
                 <img
-                  src={require(`./..//src/Assets/${detl.img_insta_url}`)}
+                  src={`./..//src/Assets/${detl.img_insta_url}`}
                   alt="insta images"
                 />
               </div>
